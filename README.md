@@ -9,4 +9,4 @@ A custom Jekyll site for a student community wall. Students submit through a pub
 - GitHub Actions build and deployment workflow.
 - Editorial and Tally/Make launch guide in [SETUP.md](SETUP.md).
 
-The submission page has a placeholder until you publish a Tally form and add its embed code. See `SETUP.md`.
+The submission page embeds the published Tally form. See `SETUP.md` to connect new responses to the review workflow.
