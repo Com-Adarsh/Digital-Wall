@@ -1,12 +1,12 @@
 # Launch and moderation setup
 
-## Publish the site
+## Publish the site on Vercel
 
-1. This starter targets `Com-Adarsh/Digital-Wall`; its project-site address is configured as `https://com-adarsh.github.io/Digital-Wall/`.
-2. Customize the `title` and `description` in `_config.yml` and the site copy.
-3. In **Settings → Pages**, set the publishing source to **GitHub Actions**.
-4. Protect `main` so only the editorial team can merge. The included workflow deploys on pushes to `main`.
-5. For a custom domain, configure it in **Settings → Pages**, update `url` and `baseurl` in `_config.yml`, and add the DNS records GitHub specifies.
+1. In Vercel, import the `Com-Adarsh/Digital-Wall` GitHub repository and select the repository root as the project root.
+2. Use the build command `bundle exec jekyll build` and output directory `_site`. Vercel may detect Jekyll automatically.
+3. Deploy the project. Vercel creates a production deployment from `main` and preview deployments for proposed changes.
+4. Protect `main` so only editors can merge. A merge triggers the production deployment.
+5. For a custom domain, add it in Vercel's project settings and configure the DNS records Vercel provides.
 
 ## Create the public form
 
@@ -47,6 +47,6 @@ Omit image fields when there is no image. Verify image links are public, stable,
 
 ## Review and publish
 
-Editors request changes or close the PR if needed. Merge approved submissions. The push to `main` starts the Pages workflow and publishes the story. To remove a post, delete its Markdown file in a reviewed commit; the next deployment removes it from the site.
+Editors request changes or close the PR if needed. Merge approved submissions. The push to `main` starts the Vercel deployment and publishes the story. To remove a post, delete its Markdown file in a reviewed commit; the next deployment removes it from the site.
 
 Assign at least two trusted editors, enable two-factor authentication, and require human review for submission PRs. Keep Make logs and form responses private. Test the entire path from form to live site before sharing the form publicly.
