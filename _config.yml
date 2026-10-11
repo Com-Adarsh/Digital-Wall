@@ -1,0 +1,19 @@
+title: Campus Wall
+description: A space for student stories, ideas, and creative work.
+url: "https://com-adarsh.github.io"
+baseurl: "/Digital-Wall"
+markdown: kramdown
+collections:
+  stories:
+    output: true
+    permalink: /stories/:name/
+defaults:
+  - scope:
+      path: ""
+      type: stories
+    values:
+      layout: story
+      category: Community
+      author: Student
+      date: 2000-01-01
+exclude: [README.md, SETUP.md, Gemfile, Gemfile.lock, vendor]
