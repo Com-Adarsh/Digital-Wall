@@ -1,0 +1,10 @@
+---
+layout: default
+---
+<article class="story-page">
+  <a class="back-link" href="{{ '/' | relative_url }}#stories">← Back to the wall</a>
+  <header class="story-header"><span class="category-tag">{{ page.category }}</span><h1>{{ page.title }}</h1><p class="story-byline">By {{ page.author }} <span>·</span> {{ page.date | date: "%B %-d, %Y" }}</p></header>
+  {% if page.image %}<figure class="story-hero-image"><img src="{{ page.image | escape }}" alt="{{ page.image_alt | default: page.title | escape }}"></figure>{% endif %}
+  <div class="story-body">{{ content }}</div>
+  <div class="story-end"><span>✳</span><p>Thanks for being part of the wall.</p><a class="text-link" href="{{ '/submit/' | relative_url }}">Share your own <span aria-hidden="true">↗</span></a></div>
+</article>
