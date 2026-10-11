@@ -12,7 +12,7 @@
 
 Create a Tally form with required fields `Author name`, `Category` (Stories, Art & making, Campus life, Ideas), `Title`, `Post text`, and a consent checkbox confirming authorship/permission to publish. Optional fields: `Image URL`, `Image alt text`, and a private `Contact email` for editorial follow-up. Never include contact email in the public post. Explain that approved posts become public and tell students how to request a correction or removal.
 
-Copy the form's embed URL. In `submit/index.html`, replace the placeholder with Tally's current iframe embed snippet. Set its accessible title to “Campus Wall submission form.” Keep form responses private and set a retention period.
+The published form at `https://tally.so/r/eq170e` is already embedded on `/submit/` with dynamic height. Keep form responses private and set a retention period.
 
 ## Connect Tally to GitHub through Make
 
